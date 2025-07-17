@@ -1,0 +1,103 @@
+body{
+    background-color: #2e1c22 ;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+    padding: 15px 5%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    display: block;
+    height: clamp(30px, 6vw, 50px);
+    width: auto;
+  }
+  
+  .L-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .lang select {
+    background: black;
+    color: whitesmoke;
+    border: 1px solid white;
+    padding: clamp(3px, 1vw, 5px) clamp(6px, 2vw, 10px);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: clamp(12px, 3vw, 16px);
+  }
+  
+  .signin a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: black;
+    padding: clamp(6px, 1.5vw, 8px) clamp(10px, 3vw, 15px);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: clamp(12px, 3vw, 16px);
+  }
+  
+  .signin a:hover {
+    background-color: rgb(231, 207, 207);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 3%;
+    }
+
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .L-box {
+      gap: 10px;
+    }
+
+    .lang select {
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+
+    .signin a {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      padding: 8px 2%;
+    }
+
+    .L-box {
+      gap: 8px;
+    }
+
+    .lang select {
+      padding: 2px 4px;
+      font-size: 10px;
+    }
+
+    .signin a {
+      padding: 4px 8px;
+      font-size: 10px;
+    }
+  }
